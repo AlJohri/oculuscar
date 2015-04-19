@@ -20,7 +20,7 @@ def test():
 @app.route('/', methods = ['GET'])
 def other_function():
 	global last_data
-	return str("*"+last_data['servo']+'F'+last_data['left'] + 'F' +last_data['right'])
+	return str("*"+last_data['servo'] + last_data['left'] + last_data['right'])
 
 
 if __name__ == "__main__":
