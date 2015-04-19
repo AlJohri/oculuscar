@@ -15,4 +15,4 @@ def other_function():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=int(os.getenv('port', '5000')), host='0.0.0.0')
+    app.run(debug=True, port=int(os.getenv('PORT', '5000')), host='0.0.0.0')
