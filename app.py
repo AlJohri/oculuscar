@@ -13,7 +13,7 @@ def test():
 
 @app.route('/', methods = ['GET'])
 def other_function():
-	return str(last_data)
+	return str("*"+last_data['servo']+'F'+last_data['left'] + 'F' +last_data['right'])
 
 
 if __name__ == "__main__":
