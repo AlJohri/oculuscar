@@ -10,11 +10,11 @@ def test():
 	global last_data
 	temp = dict(request.form)
 	if 'left' in temp:
-		last_data['left'] = temp['left']
+		last_data['left'] = temp['left'][0]
 	if 'right' in temp:
-		last_data['right'] = temp['right']
+		last_data['right'] = temp['right'][0]
 	if 'servo' in temp:
-		last_data['servo'] = temp['servo']
+		last_data['servo'] = temp['servo'][0]
 	return str(last_data)
 
 @app.route('/', methods = ['GET'])
