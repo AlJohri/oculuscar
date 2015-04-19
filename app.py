@@ -2,10 +2,12 @@ import os
 from flask import Flask
 from flask import request
 app = Flask(__name__)
+
 last_data = {}
 
 @app.route('/', methods = ['POST'])
 def test():
+	global last_data
 	last_data = dict(request.form)
 	return str(last_data)
 
