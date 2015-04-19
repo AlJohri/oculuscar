@@ -3,7 +3,7 @@ from flask import Flask
 from flask import request
 app = Flask(__name__)
 
-last_data = dict([['servo', '000'], ['left', '000'], ['right', '000']])
+last_data = dict([['servo', '090'], ['left', '000'], ['right', '000']])
 
 @app.route('/', methods = ['POST'])
 def test():
